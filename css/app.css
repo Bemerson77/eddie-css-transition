@@ -5850,7 +5850,7 @@ img {
     font-weight: 400;
     width: 65%; }
 
-.step-outer:hover .step-main, .step-outer:active .step-main, .step-outer:focus .step-main {
+.step-outer:hover .step-main, .step-outer:focus .step-main {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.5s, visibility 0.5s ease-in-out;
@@ -5863,7 +5863,7 @@ img {
           transition-timing-function: ease-in-out;
   -webkit-transition-delay: initial, initial;
           transition-delay: initial, initial; }
-.step-outer:hover .step-hover, .step-outer:active .step-hover, .step-outer:focus .step-hover {
+.step-outer:hover .step-hover, .step-outer:focus .step-hover {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.5s, visibility 0.5s ease-in-out;
@@ -5876,4 +5876,5 @@ img {
           transition-timing-function: ease-in-out;
   -webkit-transition-delay: initial, initial;
           transition-delay: initial, initial; }
+
 /*# sourceMappingURL=app.css.map */
