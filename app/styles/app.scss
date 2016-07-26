@@ -1,4 +1,6 @@
 
+// $container-large-desktop: (1014px);
+
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
@@ -71,6 +73,11 @@ img {
   top: 0;
   visibility: visible;
   opacity: 1;
+  transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial;
 
 
   i {
@@ -106,6 +113,11 @@ img {
   top: 0;
   visibility: hidden;
   opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial;
 
 
 
@@ -168,4 +180,22 @@ img {
       transition-delay: initial, initial;
     }
   }
+}
+
+
+
+// Media Query
+
+
+//mobile
+@media (max-width: 768px) {
+
+  .step-outer{
+    margin-bottom: 10px;
+  }
+
+  .img-wrapper img {
+    width: 81%;
+  }
+
 }
