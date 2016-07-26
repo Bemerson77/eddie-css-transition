@@ -1,0 +1,162 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-wrapper {
+  text-align: center;
+}
+
+
+// global color classes
+
+.green {
+  color: #33bb9b;
+}
+
+.orange {
+  color: #bb5633;
+}
+
+.blue {
+  color: #3386bb;
+}
+
+.red {
+  color: #bb3346;
+}
+
+// global classes for vertical align
+
+.step-inner {
+  display: table;
+  height: 100%
+}
+
+.step-txt {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+// padding for section height
+
+.section-inner {
+  padding-bottom: 150px;
+}
+
+// styling for elements before hover
+
+.step-main {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+
+
+  i {
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+}
+
+
+// styles for hover elements
+
+.step-hover {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+
+
+
+  h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    width: 65%;
+    margin: auto;
+
+  }
+
+  p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 65%;
+
+  }
+}
+
+// hover trasitions
+
+
+.step-outer {
+
+  &:hover .step-main {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s ease-in-out;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
+  }
+
+  &:hover .step-hover {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s, visibility 0.5s ease-in-out;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
+  }
+}
