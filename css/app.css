@@ -5903,5 +5903,8 @@ img {
 
   .img-wrapper img {
     width: 81%; } }
+@media (min-width: 1200px) {
+  .img-wrapper img {
+    width: 100%; } }
 
 /*# sourceMappingURL=app.css.map */
