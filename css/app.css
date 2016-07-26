@@ -5805,7 +5805,17 @@ img {
   left: 0;
   top: 0;
   visibility: visible;
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 0.5s 0.5s;
+          transition-duration: 0.5s 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: initial, initial;
+          transition-delay: initial, initial; }
   .step-main i {
     font-size: 3em;
     text-align: center;
@@ -5829,7 +5839,17 @@ img {
   left: 0;
   top: 0;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  transition: opacity 0.5s, visibility 0.5s ease-in-out;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 0.5s 0.5s;
+          transition-duration: 0.5s 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: initial, initial;
+          transition-delay: initial, initial; }
   .step-hover h3 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -5876,5 +5896,12 @@ img {
           transition-timing-function: ease-in-out;
   -webkit-transition-delay: initial, initial;
           transition-delay: initial, initial; }
+
+@media (max-width: 768px) {
+  .step-outer {
+    margin-bottom: 10px; }
+
+  .img-wrapper img {
+    width: 81%; } }
 
 /*# sourceMappingURL=app.css.map */
