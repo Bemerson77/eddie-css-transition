@@ -5903,6 +5903,12 @@ img {
 
   .img-wrapper img {
     width: 81%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .step-hover p {
+    display: none; }
+
+  .step-hover h3 {
+    width: 100%; } }
 @media (min-width: 1200px) {
   .img-wrapper img {
     width: 100%; } }
